@@ -1,2 +1,6 @@
+Run 
+```
+. ./run.sh
+```
 ## TODO
-- Create script to autocopy the folders to various required directories
+- [x] Create script to autocopy the folders to various required directories
