@@ -14,5 +14,6 @@ echo "Zellij..."
 cp -r zellij/ ~/.config/zellij
 echo "Starship..."
 cp starship.toml ~/.config/starship.toml
-
+echo "Wezterm..."
+cp .wezterm.lua ~/.wezterm.lua
 echo "Done 👍"
