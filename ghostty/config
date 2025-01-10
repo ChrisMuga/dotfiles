@@ -1,7 +1,6 @@
 term = xterm-256color
 theme = dark:catppuccin-macchiato,light:catppuccin-latte
 theme = catppuccin-macchiato
-theme = GruvboxDark
 font-family = Iosevka Term
 font-size = 18
 background-opacity = 0.9
