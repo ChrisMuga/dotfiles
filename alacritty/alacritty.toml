@@ -1,8 +1,13 @@
 [window]
-opacity = 0.92
+opacity = 0.9
 decorations = "None"
 dynamic_padding = true
 startup_mode = "Maximized"
+option_as_alt = "Both"
+title = "DragonSlayer"
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
 
 [font]
 normal = { family = "IosevkaTerm Nerd Font", style = "Regular"}
