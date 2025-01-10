@@ -2,7 +2,7 @@
 opacity = 0.9
 decorations = "None"
 dynamic_padding = true
-startup_mode = "FullScreen"
+startup_mode = "Maximized"
 option_as_alt = "Both"
 title = "DragonSlayer"
 
