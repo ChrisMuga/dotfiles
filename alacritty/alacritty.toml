@@ -1,0 +1,10 @@
+[window]
+opacity = 0.92
+decorations = "None"
+dynamic_padding = true
+startup_mode = "Maximized"
+
+[font]
+normal = { family = "IosevkaTerm Nerd Font", style = "Regular"}
+italic = { family = "IosevkaTerm Nerd Font", style = "Italic"}
+bold = { family = "IosevkaTerm Nerd Font", style = "Bold"}
