@@ -1,5 +1,5 @@
 [window]
-opacity = 0.9
+opacity = 0.7
 decorations = "None"
 dynamic_padding = true
 startup_mode = "Maximized"
@@ -8,6 +8,11 @@ title = "DragonSlayer"
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
+
+[keyboard]
+bindings = [
+	{key = "N",  mods="Control|Shift", action="CreateNewWindow"},
+	]
 
 [font]
 normal = { family = "IosevkaTerm Nerd Font", style = "Regular"}

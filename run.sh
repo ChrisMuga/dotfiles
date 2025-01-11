@@ -1,27 +1,35 @@
 echo "Resetting config"
 
 echo "Alarcritty..."
-cp -r alacritty/ ~/.config/alacritty
+rm -rf ~/.config/alacritty
+cp -R alacritty/ ~/.config/
 echo "------"
 echo "Ghostty..."
-cp -r ghostty/ ~/.config/ghostty
+rm -rf ~/.config/ghostty
+cp -R ghostty/ ~/.config/
 echo "------"
 echo "Kitty..."
-cp -r kitty/ ~/.config/kitty
+rm -rf ~/.config/kitty
+cp -R kitty/ ~/.config/
 echo "------"
 echo "Nvim..."
-cp -r nvim/ ~/.config/nvim
+rm -rf ~/.config/nvim
+cp -R nvim/ ~/.config/
 echo "------"
 echo "Tmux..."
-cp -r tmux/ ~/.config/tmux
+rm -rf ~/.config/tmux
+cp -R tmux/ ~/.config/
 echo "------"
 echo "Zellij..."
-cp -r zellij/ ~/.config/zellij
+rm -rf ~/.config/zellij
+cp -R zellij/ ~/.config/
 echo "------"
 echo "Starship..."
-cp starship.toml ~/.config/starship.toml
+rm ~/.config/starship.toml
+cp starship.toml ~/.config/
 echo "------"
 echo "Wezterm..."
+rm ~/.wezterm.lua
 cp .wezterm.lua ~/.wezterm.lua
 echo "------"
 echo "Done 👍"
