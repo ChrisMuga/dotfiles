@@ -3,6 +3,5 @@ theme = dark:catppuccin-macchiato,light:catppuccin-latte
 theme = catppuccin-macchiato
 font-family = Iosevka Term
 font-size = 18
-background-opacity = 0.9
 window-height=510
 window-width=1640
