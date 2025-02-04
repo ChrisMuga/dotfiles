@@ -4,3 +4,8 @@ theme = catppuccin-macchiato
 font-family = Iosevka Term
 window-height=510
 window-width=1640
+
+macos-option-as-alt = left
+
+keybind = alt+left=unbind
+keybind = alt+right=unbind
