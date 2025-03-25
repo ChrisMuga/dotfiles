@@ -25,7 +25,7 @@ keybind = alt+shift+down=goto_split:down
 
 keybind = alt+e=equalize_splits
 
-keybind = cmd+shift+right=resize_split:right,10
-keybind = cmd+shift+left=resize_split:left,10
-keybind = cmd+shift+up=resize_split:up,10
-keybind = cmd+shift+down=resize_split:down,10
+keybind = ctrl+shift+right=resize_split:right,10
+keybind = ctrl+shift+left=resize_split:left,10
+keybind = ctrl+shift+up=resize_split:up,10
+keybind = ctrl+shift+down=resize_split:down,10
