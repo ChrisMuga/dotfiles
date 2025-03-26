@@ -1,7 +1,6 @@
 term = xterm-256color
 theme = dark:catppuccin-macchiato,light:catppuccin-latte
-theme = catppuccin-macchiato
-font-family = Iosevka Term
+font-family = 3270 Nerd Font Mono
 window-height=510
 window-width=1640
 
