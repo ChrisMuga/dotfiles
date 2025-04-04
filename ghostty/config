@@ -11,17 +11,20 @@ keybind = alt+left=unbind
 keybind = alt+right=unbind
 keybind = alt+right=unbind
 
-keybind = alt+right=next_tab
-keybind = alt+left=previous_tab
+keybind = cmd+right=next_tab
+keybind = cmd+left=previous_tab
+
+keybind = ctrl+right=next_tab
+keybind = ctrl+left=previous_tab
 
 keybind = alt+s=new_split:auto
 keybind = alt+d=new_split:down
 keybind = alt+r=new_split:right
 
-keybind = alt+shift+left=goto_split:left
-keybind = alt+shift+right=goto_split:right
-keybind = alt+shift+up=goto_split:up
-keybind = alt+shift+down=goto_split:down
+keybind = alt+left=goto_split:left
+keybind = alt+right=goto_split:right
+keybind = alt+up=goto_split:up
+keybind = alt+down=goto_split:down
 
 keybind = alt+e=equalize_splits
 
