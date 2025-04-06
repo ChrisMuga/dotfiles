@@ -32,3 +32,5 @@ keybind = ctrl+shift+right=resize_split:right,10
 keybind = ctrl+shift+left=resize_split:left,10
 keybind = ctrl+shift+up=resize_split:up,10
 keybind = ctrl+shift+down=resize_split:down,10
+
+keybind = ctrl+`=toggle_quick_terminal
