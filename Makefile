@@ -1,6 +1,6 @@
+.SILENT:
 run:
 	. ./run.sh
-.SILENT:
 run-tmux:
 	rm -rf ~/.config/tmux
 	cp -R tmux/ ~/.config/tmux/
