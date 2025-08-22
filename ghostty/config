@@ -1,6 +1,5 @@
 term = xterm-256color
 theme = dark:Bright Lights,light:catppuccin-latte
-theme = Floraverse
 font-family = IosevkaTerm Nerd Font
 window-height=510
 window-width=1640
