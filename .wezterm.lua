@@ -49,6 +49,38 @@ config.keys = {
 		mods = 'CTRL',
 		action = wezterm.action.ActivateTabRelative(-1) ,
 	  },
+	-- Spawning Panes
+	  {
+		key = 'r',
+		mods = 'ALT',
+		action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+	  },
+	  {
+		key = 'd',
+		mods = 'ALT',
+		action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+	  },
+	-- Pane navigation
+	 {
+		key = 'LeftArrow',
+		mods = 'ALT',
+		action = wezterm.action.ActivatePaneDirection 'Left',
+	  },
+	  {
+		key = 'RightArrow',
+		mods = 'ALT',
+		action = wezterm.action.ActivatePaneDirection 'Right',
+	  },
+	  {
+		key = 'UpArrow',
+		mods = 'ALT',
+		action = wezterm.action.ActivatePaneDirection 'Up',
+	  },
+	  {
+		key = 'DownArrow',
+		mods = 'ALT',
+		action = wezterm.action.ActivatePaneDirection 'Down',
+	  },
 }
 
 config.front_end = "OpenGL"
