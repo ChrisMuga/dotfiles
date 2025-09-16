@@ -19,7 +19,7 @@ if wezterm.config_builder then
 	-- config.font = wezterm.font('JetBrainsMono Nerd Font Mono', { weight = 460 })
 	-- config.font = wezterm.font('3270 Nerd Font Mono', { weight = 500 })
 	-- config.font = wezterm.font(JETBRAINSMONO, { weight = 500 })
-	config.font = wezterm.font(IOSEVKA, { weight = 500 })
+	-- config.font = wezterm.font(IOSEVKA, { weight = 500 })
 	-- config.font_size = 16
 end
 
