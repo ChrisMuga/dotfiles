@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This table will hold the configuration.
 local config = {}
@@ -27,10 +27,10 @@ end
 
 -- For example, changing the color scheme:
 config.window_background_opacity = 0.9
--- config.color_scheme = 'Cai'
--- config.color_scheme = 'matrix'
+-- config.color_scheme = "Cai"
+-- config.color_scheme = "matrix"
 -- config.color_scheme = 'Materia (base16)'
--- config.color_scheme = 'Mono Amber (Gogh)'
+-- config.color_scheme = "Mono Amber (Gogh)"
 -- config.color_scheme = 'Material Vivid (base16)'
 -- config.color_scheme = 'Seafoam Pastel (Gogh)'
 -- config.color_scheme = 'Silk Light (base16)'
@@ -38,49 +38,70 @@ config.window_background_opacity = 0.9
 -- Key bindings
 config.keys = {
 	-- Activate the next tab
-	  {
-		key = 'RightArrow',
-		mods = 'CTRL',
-		action = wezterm.action.ActivateTabRelative(1) ,
-	  },
+	{
+		key = "RightArrow",
+		mods = "CMD",
+		action = wezterm.action.ActivateTabRelative(1),
+	},
 	-- Activate the previous tab
-	  {
-		key = 'LeftArrow',
-		mods = 'CTRL',
-		action = wezterm.action.ActivateTabRelative(-1) ,
-	  },
+	{
+		key = "LeftArrow",
+		mods = "CMD",
+		action = wezterm.action.ActivateTabRelative(-1),
+	},
 	-- Spawning Panes
-	  {
-		key = 'r',
-		mods = 'ALT',
-		action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
-	  },
-	  {
-		key = 'd',
-		mods = 'ALT',
-		action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
-	  },
+	{
+		key = "r",
+		mods = "ALT",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		key = "d",
+		mods = "ALT",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
 	-- Pane navigation
-	 {
-		key = 'LeftArrow',
-		mods = 'ALT',
-		action = wezterm.action.ActivatePaneDirection 'Left',
-	  },
-	  {
-		key = 'RightArrow',
-		mods = 'ALT',
-		action = wezterm.action.ActivatePaneDirection 'Right',
-	  },
-	  {
-		key = 'UpArrow',
-		mods = 'ALT',
-		action = wezterm.action.ActivatePaneDirection 'Up',
-	  },
-	  {
-		key = 'DownArrow',
-		mods = 'ALT',
-		action = wezterm.action.ActivatePaneDirection 'Down',
-	  },
+	{
+		key = "LeftArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Left"),
+	},
+	{
+		key = "RightArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Right"),
+	},
+	{
+		key = "UpArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Up"),
+	},
+	{
+		key = "DownArrow",
+		mods = "ALT",
+		action = wezterm.action.ActivatePaneDirection("Down"),
+	},
+	-- Pane resizing
+	{
+		key = "LeftArrow",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Left", 1 }),
+	},
+	{
+		key = "RightArrow",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Right", 1 }),
+	},
+	{
+		key = "UpArrow",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Up", 1 }),
+	},
+	{
+		key = "DownArrow",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.AdjustPaneSize({ "Down", 1 }),
+	},
 }
 
 config.front_end = "OpenGL"
