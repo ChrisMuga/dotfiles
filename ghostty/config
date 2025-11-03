@@ -1,6 +1,5 @@
 term = xterm-256color
-theme = Aura
-font-family = IosevkaTerm Nerd Font
+theme = dark:Rose Pine Moon,light:Rose Pine Dawn
 window-height=510
 window-width=1640
 
