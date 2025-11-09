@@ -10,5 +10,6 @@ make run-nvim -s
 make run-lazygit -s
 make run-starship -s
 make run-wezterm -s
+make run-vim -s
 echo "------"
 echo "Done 👍"
