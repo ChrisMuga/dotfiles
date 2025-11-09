@@ -36,4 +36,8 @@ run-starship:
 run-wezterm:
 	rm -f ~/.wezterm.lua
 	cp .wezterm.lua ~/.wezterm.lua
-	echo "Wezterm ✅"
+	echo "wezterm ✅"
+run-vim:
+	cp .vimrc ~/.vimrc
+	echo ".vimrc ✅"
+	
