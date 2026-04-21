@@ -20,20 +20,26 @@ if wezterm.config_builder then
 	-- config.font = wezterm.font('3270 Nerd Font Mono', { weight = 500 })
 	-- config.font = wezterm.font(JETBRAINSMONO, { weight = 500 })
 	-- config.font = wezterm.font(IOSEVKA, { weight = 500 })
+	config.font = wezterm.font(IOSEVKA, { weight = 500 })
 	-- config.font_size = 16
 end
 
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.window_background_opacity = 0.9
+-- config.window_background_opacity = 0.9
 -- config.color_scheme = "Cai"
 -- config.color_scheme = "matrix"
+-- config.color_scheme = "Relaxed"
 -- config.color_scheme = 'Materia (base16)'
 -- config.color_scheme = "Mono Amber (Gogh)"
 -- config.color_scheme = 'Material Vivid (base16)'
 -- config.color_scheme = 'Seafoam Pastel (Gogh)'
 -- config.color_scheme = 'Silk Light (base16)'
+-- config.color_scheme = 'Solarized (light) (terminal.sexy)'
+-- config.color_scheme = 'Solarized (dark) (terminal.sexy)'
+config.color_scheme = "Github Dark (Gogh)"
+-- config.color_scheme = 'Github Light (Gogh)'
 
 -- Key bindings
 config.keys = {
