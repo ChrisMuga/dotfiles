@@ -4,10 +4,10 @@ local wezterm = require("wezterm")
 -- This table will hold the configuration.
 local config = {}
 
-local JETBRAINSMONO = "JetBrainsMono Nerd Font Mono"
-local LEKTON = "Lekton Nerd Font Mono"
-local TERMINESS = "Terminess Nerd Font"
-local PROPO = "3270 Nerd Font Propo"
+-- local JETBRAINSMONO = "JetBrainsMono Nerd Font Mono"
+-- local LEKTON = "Lekton Nerd Font Mono"
+-- local TERMINESS = "Terminess Nerd Font"
+-- local PROPO = "3270 Nerd Font Propo"
 local IOSEVKA = "IosevkaTerm Nerd Font"
 
 -- In newer versions of wezterm, use the config_builder which will
