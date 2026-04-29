@@ -35,9 +35,11 @@ run-starship:
 	echo "Starship ✅"
 run-wezterm:
 	rm -f ~/.wezterm.lua
-	cp .wezterm.lua ~/.wezterm.lua
+	cp wezterm.lua ~/.wezterm.lua
 	echo "wezterm ✅"
 run-vim:
 	cp .vimrc ~/.vimrc
 	echo ".vimrc ✅"
-	
+run-hyper:
+	cp hyper.js ~/.hyper.js
+	echo ".hyper.js ✅"
