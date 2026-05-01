@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 const char LIGHT_THEME_GHOSTTY[] = "Ayu Light";
 const char DARK_THEME_GHOSTTY[] = "Ayu";
@@ -21,12 +22,19 @@ int main() {
     return 0;
   }
 
+  char path[1000] = "";
+
+  strcat(path, home);
+  strcat(path, "/");
+  strcat(path, CONFIG_FILE_PATH_GHOSTTY);
+
+  printf("----> %s\n", path);
+
   FILE *fptr;
 
-  fptr = fopen(CONFIG_FILE_PATH_GHOSTTY, "r");
+  fptr = fopen(path, "r");
 
   if (fptr == NULL) {
-    printf("----> %s\n", home);
     printf("Cannot open file\n");
   }
 
