@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-const char LIGHT_THEME_GHOSTTY[] = "Ayu Light";
-const char DARK_THEME_GHOSTTY[] = "Ayu";
+const char SET_GHOSTTY_THEME_LIGHT[] = "theme = Ayu Light";
+const char SET_GHOSTTY_THEME_DARK[] = "theme = Ayu";
 
 const char CONFIG_FILE_PATH_GHOSTTY[] = ".config/ghostty/config";
 const char CONFIG_FILE_PATH_NVIM[] = "~/.config/nvim/lua/set-theme.lua";
@@ -13,30 +12,33 @@ const char CONFIG_FILE_PATH_NVIM[] = "~/.config/nvim/lua/set-theme.lua";
 //  		- ghostty - ~/.config/ghostty/config
 //  		- nvim -> ~/.config/nvim/lua/set-theme.lua
 
-int main() {
+int main(int argc, char **args) {
   printf("Your's is the world, and everything that's in it.\n");
   const char *home = getenv("HOME");
+
+  // printf("----> %d, ^ %s", argc, args[1]);
+  char theme[] = "light";
 
   if (home == NULL) {
     printf("Cannot access path\n");
     return 0;
   }
 
-  char path[1000] = "";
+  char path[1000];
 
-  strcat(path, home);
-  strcat(path, "/");
-  strcat(path, CONFIG_FILE_PATH_GHOSTTY);
-
-  printf("----> %s\n", path);
+  sprintf(path, "%s/%s", home, CONFIG_FILE_PATH_GHOSTTY);
 
   FILE *fptr;
 
-  fptr = fopen(path, "r");
+  fptr = fopen(path, "a");
 
   if (fptr == NULL) {
     printf("Cannot open file\n");
+    return 0;
   }
+
+  printf("----> %s\n", path);
+  fprintf(fptr, SET_GHOSTTY_THEME_DARK);
 
   return 0;
 }
