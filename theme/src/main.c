@@ -31,18 +31,18 @@ int main(int argc, char **args) {
 
   if (argc > 1) {
     strcpy(mode, args[1]);
+    if (strcmp(mode, MODE_LIGHT) != 0 && strcmp(mode, MODE_DARK) != 0) {
+      printf(
+          "\"%s\" is not an acceptable theme, expected values dark | light\n",
+          mode);
+      return 0;
+    }
 
     if (strcmp(mode, "dark") == 0) {
       // Set themes dark
       strcpy(ghostty_command, SET_GHOSTTY_THEME_DARK);
       strcpy(nvim_command, SET_NVIM_THEME_DARK);
     } else {
-      if (strcmp(mode, MODE_LIGHT) != 0) {
-        printf(
-            "\"%s\" is not an acceptable theme, expected values dark | light\n",
-            mode);
-        return 0;
-      }
       // Set themes light
       strcpy(ghostty_command, SET_GHOSTTY_THEME_LIGHT);
       strcpy(nvim_command, SET_NVIM_THEME_LIGHT);
