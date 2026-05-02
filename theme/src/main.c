@@ -83,7 +83,7 @@ int main(int argc, char **args) {
 
   fclose(fptr_nvim);
 
-  printf("Theme successfully changed to %s mode. Refresh", mode);
+  printf("Theme successfully changed to %s mode. Refresh\n", mode);
 
   return 0;
 }
