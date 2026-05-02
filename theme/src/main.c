@@ -5,8 +5,8 @@
 const char SET_GHOSTTY_THEME_LIGHT[] = "theme = Ayu Light\n";
 const char SET_GHOSTTY_THEME_DARK[] = "theme = Ayu\n";
 
-const char SET_NVIM_THEME_LIGHT[] = "theme = \"ayu-light\"\n";
-const char SET_NVIM_THEME_DARK[] = "theme = \"ayu-dark\"\n";
+const char SET_NVIM_THEME_LIGHT[] = "theme = \"ayu-light\"\nvim.cmd.colorscheme(theme)\n";
+const char SET_NVIM_THEME_DARK[] = "theme = \"ayu-dark\"\nvim.cmd.colorscheme(theme)\n";
 
 const char CONFIG_FILE_PATH_GHOSTTY[] = ".config/ghostty/config";
 const char CONFIG_FILE_PATH_NVIM[] = ".config/nvim/lua/set-theme.lua";
@@ -24,13 +24,16 @@ int main(int argc, char **args) {
 
   if (argc > 1) {
     if (strcmp(args[1], "dark") == 0) {
+      // Set themes dark
       strcpy(ghostty_command, SET_GHOSTTY_THEME_DARK);
       strcpy(nvim_command, SET_NVIM_THEME_DARK);
     } else {
+      // Set themes light
       strcpy(ghostty_command, SET_GHOSTTY_THEME_LIGHT);
       strcpy(nvim_command, SET_NVIM_THEME_LIGHT);
     }
   } else {
+    // Set themes light
     strcpy(ghostty_command, SET_GHOSTTY_THEME_LIGHT);
     strcpy(nvim_command, SET_NVIM_THEME_LIGHT);
   }
