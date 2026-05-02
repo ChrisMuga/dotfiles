@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MODE_LIGHT "light"
+#define MODE_DARK "dark"
+
 const char SET_GHOSTTY_THEME_LIGHT[] = "theme = Ayu Light\n";
 const char SET_GHOSTTY_THEME_DARK[] = "theme = Ayu\n";
 
@@ -34,6 +37,12 @@ int main(int argc, char **args) {
       strcpy(ghostty_command, SET_GHOSTTY_THEME_DARK);
       strcpy(nvim_command, SET_NVIM_THEME_DARK);
     } else {
+      if (strcmp(mode, MODE_LIGHT) != 0) {
+        printf(
+            "\"%s\" is not an acceptable theme, expected values dark | light\n",
+            mode);
+        return 0;
+      }
       // Set themes light
       strcpy(ghostty_command, SET_GHOSTTY_THEME_LIGHT);
       strcpy(nvim_command, SET_NVIM_THEME_LIGHT);
