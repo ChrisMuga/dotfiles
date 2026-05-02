@@ -16,7 +16,7 @@ const char SET_NVIM_THEME_DARK[] =
 const char CONFIG_FILE_PATH_GHOSTTY[] = ".config/ghostty/config";
 const char CONFIG_FILE_PATH_NVIM[] = ".config/nvim/lua/set-theme.lua";
 
-// TODO:
+// NOTE:
 //	- Find get the path of the config files, i.e:
 //  		- ghostty - ~/.config/ghostty/config
 //  		- nvim -> ~/.config/nvim/lua/set-theme.lua
