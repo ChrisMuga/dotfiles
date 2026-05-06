@@ -38,7 +38,7 @@ run-wezterm:
 	cp wezterm.lua ~/.wezterm.lua
 	echo "wezterm ✅"
 run-vim:
-	cp .vimrc ~/.vimrc
+	cp vimrc ~/.vimrc
 	echo ".vimrc ✅"
 run-hyper:
 	cp hyper.js ~/.hyper.js
