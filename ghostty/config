@@ -1,5 +1,7 @@
 term = xterm-256color
 theme = dark:Rose Pine Moon,light:Rose Pine Dawn
+font-family = IosevkaTerm Nerd Font
+# font-family = BlexMono Nerd Font
 window-height=510
 window-width=1640
 

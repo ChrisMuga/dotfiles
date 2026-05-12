@@ -8,7 +8,8 @@ local config = {}
 -- local LEKTON = "Lekton Nerd Font Mono"
 -- local TERMINESS = "Terminess Nerd Font"
 -- local PROPO = "3270 Nerd Font Propo"
-local IOSEVKA = "IosevkaTerm Nerd Font"
+-- local IOSEVKA = "IosevkaTerm Nerd Font"
+local BLEX_MONO = "BlexMono Nerd Font"
 
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
@@ -20,14 +21,14 @@ if wezterm.config_builder then
 	-- config.font = wezterm.font('3270 Nerd Font Mono', { weight = 500 })
 	-- config.font = wezterm.font(JETBRAINSMONO, { weight = 500 })
 	-- config.font = wezterm.font(IOSEVKA, { weight = 500 })
-	config.font = wezterm.font(IOSEVKA, { weight = 500 })
+	config.font = wezterm.font(BLEX_MONO, { weight = 500 })
 	-- config.font_size = 16
 end
 
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
--- config.window_background_opacity = 0.9
+config.window_background_opacity = 0.95
 -- config.color_scheme = "Cai"
 -- config.color_scheme = "matrix"
 -- config.color_scheme = "Relaxed"
