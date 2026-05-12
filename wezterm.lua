@@ -39,8 +39,10 @@ config.window_background_opacity = 0.95
 -- config.color_scheme = 'Silk Light (base16)'
 -- config.color_scheme = 'Solarized (light) (terminal.sexy)'
 -- config.color_scheme = 'Solarized (dark) (terminal.sexy)'
-config.color_scheme = "Github Dark (Gogh)"
+-- config.color_scheme = "Github Dark (Gogh)"
 -- config.color_scheme = 'Github Light (Gogh)'
+-- config.color_scheme = "dayfox"
+config.color_scheme = "nightfox"
 
 -- Key bindings
 config.keys = {
