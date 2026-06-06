@@ -4,12 +4,12 @@ local wezterm = require("wezterm")
 -- This table will hold the configuration.
 local config = {}
 
--- local JETBRAINSMONO = "JetBrainsMono Nerd Font Mono"
--- local LEKTON = "Lekton Nerd Font Mono"
--- local TERMINESS = "Terminess Nerd Font"
--- local PROPO = "3270 Nerd Font Propo"
--- local IOSEVKA = "IosevkaTerm Nerd Font"
-local BLEX_MONO = "BlexMono Nerd Font"
+-- local FONT_NAME = "JetBrainsMono Nerd Font Mono"
+-- local FONT_NAME = "Lekton Nerd Font Mono"
+-- local FONT_NAME = "Terminess Nerd Font"
+-- local FONT_NAME = "3270 Nerd Font Propo"
+-- local FONT_NAME = "IosevkaTerm Nerd Font"
+local  FONT_NAME =  "BlexMono Nerd Font"
 
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
@@ -21,7 +21,7 @@ if wezterm.config_builder then
 	-- config.font = wezterm.font('3270 Nerd Font Mono', { weight = 500 })
 	-- config.font = wezterm.font(JETBRAINSMONO, { weight = 500 })
 	-- config.font = wezterm.font(IOSEVKA, { weight = 500 })
-	config.font = wezterm.font(BLEX_MONO, { weight = 500 })
+	config.font = wezterm.font(FONT_NAME, { weight = 500 })
 	-- config.font_size = 16
 end
 
@@ -49,13 +49,13 @@ config.keys = {
 	-- Activate the next tab
 	{
 		key = "RightArrow",
-		mods = "CMD",
+		mods = "CTRL",
 		action = wezterm.action.ActivateTabRelative(1),
 	},
 	-- Activate the previous tab
 	{
 		key = "LeftArrow",
-		mods = "CMD",
+		mods = "CTRL",
 		action = wezterm.action.ActivateTabRelative(-1),
 	},
 	-- Spawning Panes
