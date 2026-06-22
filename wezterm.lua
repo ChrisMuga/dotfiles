@@ -10,7 +10,7 @@ local config = {}
 -- local FONT_NAME = "3270 Nerd Font Propo"
 -- local FONT_NAME = "IosevkaTerm Nerd Font"
 -- local  FONT_NAME =  "BlexMono Nerd Font"
-local FONT_NAME = ZedMono Nerd Font Mono
+local FONT_NAME = "ZedMono Nerd Font Mono"
 
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
