@@ -4,14 +4,18 @@
 
 #define MODE_LIGHT "light"
 #define MODE_DARK "dark"
+#define MODE_ALT "alt"
 
 const char SET_GHOSTTY_THEME_LIGHT[] = "theme = Ayu Light\n";
 const char SET_GHOSTTY_THEME_DARK[] = "theme = Ayu\n";
+const char SET_GHOSTTY_THEME_ALT[] = "theme = Gruvbox Dark\n";
 
 const char SET_NVIM_THEME_LIGHT[] =
     "theme = \"ayu-light\"\nvim.cmd.colorscheme(theme)\n";
 const char SET_NVIM_THEME_DARK[] =
     "theme = \"ayu-dark\"\nvim.cmd.colorscheme(theme)\n";
+const char SET_NVIM_THEME_ALT[] =
+    "theme = \"gruvbox\"\nvim.cmd.colorscheme(theme)\n";
 
 const char CONFIG_FILE_PATH_GHOSTTY[] = ".config/ghostty/config";
 const char CONFIG_FILE_PATH_NVIM[] = ".config/nvim/lua/set-theme.lua";
@@ -31,10 +35,11 @@ int main(int argc, char **args) {
 
   if (argc > 1) {
     strcpy(mode, args[1]);
-    if (strcmp(mode, MODE_LIGHT) != 0 && strcmp(mode, MODE_DARK) != 0) {
-      printf(
-          "\"%s\" is not an acceptable theme, expected values dark | light\n",
-          mode);
+    if (strcmp(mode, MODE_LIGHT) != 0 && strcmp(mode, MODE_DARK) != 0 &&
+        strcmp(mode, MODE_ALT) != 0) {
+      printf("\"%s\" is not an acceptable theme, expected values dark | light "
+             "| alt\n",
+             mode);
       return 0;
     }
 
@@ -42,6 +47,10 @@ int main(int argc, char **args) {
       // Set themes dark
       strcpy(ghostty_command, SET_GHOSTTY_THEME_DARK);
       strcpy(nvim_command, SET_NVIM_THEME_DARK);
+    } else if (strcmp(mode, "alt") == 0) {
+      // Set themes alt
+      strcpy(ghostty_command, SET_GHOSTTY_THEME_ALT);
+      strcpy(nvim_command, SET_NVIM_THEME_ALT);
     } else {
       // Set themes light
       strcpy(ghostty_command, SET_GHOSTTY_THEME_LIGHT);
