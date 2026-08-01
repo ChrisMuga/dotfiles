@@ -1,7 +1,7 @@
 build:
 	@ gcc src/main.c -o bin/theme
 run:
-	@ ./bin/themes alt
+	@ ./bin/theme rosy
 format:
 	@ clang-format --verbose -i ./src/*
 test:
