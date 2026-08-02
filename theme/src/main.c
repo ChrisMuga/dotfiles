@@ -14,16 +14,12 @@ const char SET_GHOSTTY_THEME_ALT[] = "theme = Gruvbox Dark\n";
 const char SET_GHOSTTY_THEME_ROSE[] = "theme = Rose Pine\n";
 const char SET_GHOSTTY_THEME_ROSY[] = "theme = Rose Pine Dawn\n";
 
-const char SET_NVIM_THEME_LIGHT[] =
-    "theme = \"ayu-light\"\nvim.cmd.colorscheme(theme)\n";
-const char SET_NVIM_THEME_DARK[] =
-    "theme = \"ayu-dark\"\nvim.cmd.colorscheme(theme)\n";
+const char SET_NVIM_THEME_LIGHT[] = "vim.cmd.colorscheme(\'ayu-light\')\n";
+const char SET_NVIM_THEME_DARK[] = "vim.cmd.colorscheme(\'ayu-dark\')\n";
 const char SET_NVIM_THEME_ALT[] =
-    "theme = \"gruvbox\"\nvim.cmd.colorscheme(theme)\n";
-const char SET_NVIM_THEME_ROSE[] =
-    "theme = \"rose-pine-main\"\nvim.cmd.colorscheme(theme)\n";
-const char SET_NVIM_THEME_ROSY[] =
-    "theme = \"rose-pine-dawn\"\nvim.cmd.colorscheme(theme)\n";
+    "vim.cmd.set(\'background=dark\')\nvim.cmd.colorscheme(\'gruvbox\')\n";
+const char SET_NVIM_THEME_ROSE[] = "vim.cmd.colorscheme(\'rose-pine-main\')\n";
+const char SET_NVIM_THEME_ROSY[] = "vim.cmd.colorscheme(\'rose-pine-dawn\')\n";
 
 const char CONFIG_FILE_PATH_GHOSTTY[] = ".config/ghostty/config";
 const char CONFIG_FILE_PATH_NVIM[] = ".config/nvim/lua/set-theme.lua";
