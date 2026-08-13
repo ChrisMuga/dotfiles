@@ -7,6 +7,7 @@
 #define MODE_ROSE "rose"
 #define MODE_ROSY "rosy"
 #define MODE_ALT "alt"
+#define MODE_RESET "reset"
 
 const char SET_GHOSTTY_THEME_LIGHT[] = "theme = Ayu Light\n";
 const char SET_GHOSTTY_THEME_DARK[] = "theme = Ayu\n";
@@ -41,31 +42,33 @@ int main(int argc, char **args) {
     strcpy(mode, args[1]);
     if (strcmp(mode, MODE_LIGHT) != 0 && strcmp(mode, MODE_DARK) != 0 &&
         strcmp(mode, MODE_ALT) != 0 && strcmp(mode, MODE_ROSE) != 0 &&
-        strcmp(mode, MODE_ROSY) != 0) {
+        strcmp(mode, MODE_ROSY) != 0 && strcmp(mode, MODE_RESET) != 0) {
       printf("\"%s\" is not an acceptable theme, expected values dark | light "
-             "| alt | rose | rosy\n",
+             "| alt | rose | rosy\n Use reset to reset the toolchain",
              mode);
       return 0;
     }
 
-    if (strcmp(mode, "dark") == 0) {
-      // Set themes dark
+    if (strcmp(mode, MODE_DARK) == 0) {
       strcpy(ghostty_command, SET_GHOSTTY_THEME_DARK);
       strcpy(nvim_command, SET_NVIM_THEME_DARK);
-    } else if (strcmp(mode, "alt") == 0) {
-      // Set themes alt
+    } else if (strcmp(mode, MODE_ALT) == 0) {
       strcpy(ghostty_command, SET_GHOSTTY_THEME_ALT);
       strcpy(nvim_command, SET_NVIM_THEME_ALT);
-    } else if (strcmp(mode, "rose") == 0) {
-      // Set themes alt
+    } else if (strcmp(mode, MODE_ROSE) == 0) {
       strcpy(ghostty_command, SET_GHOSTTY_THEME_ROSE);
       strcpy(nvim_command, SET_NVIM_THEME_ROSE);
-    } else if (strcmp(mode, "rosy") == 0) {
-      // Set themes alt
+    } else if (strcmp(mode, MODE_ROSY) == 0) {
       strcpy(ghostty_command, SET_GHOSTTY_THEME_ROSY);
       strcpy(nvim_command, SET_NVIM_THEME_ROSY);
+    } else if (strcmp(mode, MODE_RESET) == 0) {
+      printf("Resetting toolchain(s)\n");
+      int status = system("bash -c 'cd ~/dotfiles; git pull; make'");
+      if (status == -1) {
+        printf("Reset FAILED\n");
+      }
+      return 0;
     } else {
-      // Set themes light
       strcpy(ghostty_command, SET_GHOSTTY_THEME_LIGHT);
       strcpy(nvim_command, SET_NVIM_THEME_LIGHT);
     }
