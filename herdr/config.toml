@@ -4,16 +4,16 @@ name = "rose-pine"
 
 auto_switch = false
 [ui.toast]
-# delivery = "herdr"
-delivery = "system"
+delivery = "herdr"
+# delivery = "system"
 
 [ui]
 show_agent_labels_on_pane_borders = true
 
 [keys]
-# focus_pane_left = ["cmd+left"]
-# focus_pane_down = ["cmd+down"]
-# focus_pane_up = ["cmd+up"]
-# focus_pane_right = ["cmd+right"]
-previous_tab = ["prefix+left"]
-next_tab = ["prefix+right"]
+focus_pane_left = ["prefix+left"]
+focus_pane_down = ["prefix+down"]
+focus_pane_up = ["prefix+up"]
+focus_pane_right = ["prefix+right"]
+# previous_tab = ["prefix+left"]
+# next_tab = ["prefix+right"]
