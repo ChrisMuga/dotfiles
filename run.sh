@@ -11,5 +11,6 @@ make run-lazygit -s
 make run-starship -s
 make run-wezterm -s
 make run-vim -s
+make run-herdr -s
 echo "------"
 echo "Done 👍"

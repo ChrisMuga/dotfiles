@@ -36,3 +36,5 @@ keybind = ctrl+shift+up=resize_split:up,10
 keybind = ctrl+shift+down=resize_split:down,10
 
 keybind = global:ctrl+`=toggle_quick_terminal
+
+macos-option-as-alt = true

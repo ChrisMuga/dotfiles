@@ -43,3 +43,8 @@ run-vim:
 run-hyper:
 	cp hyper.js ~/.hyper.js
 	echo ".hyper.js ✅"
+run-herdr:
+	rm -rf ~/.config/herdr/config.toml
+	cp -R herdr/config.toml ~/.config/herdr/config.toml
+	herdr server reload-config
+	echo "Herdr ✅"
