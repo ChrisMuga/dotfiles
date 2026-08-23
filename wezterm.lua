@@ -8,9 +8,9 @@ local config = {}
 -- local FONT_NAME = "Lekton Nerd Font Mono"
 -- local FONT_NAME = "Terminess Nerd Font"
 -- local FONT_NAME = "3270 Nerd Font Propo"
--- local FONT_NAME = "IosevkaTerm Nerd Font"
+local FONT_NAME = "IosevkaTerm Nerd Font"
 -- local  FONT_NAME =  "BlexMono Nerd Font"
-local FONT_NAME = "ZedMono Nerd Font Mono"
+-- local FONT_NAME = "ZedMono Nerd Font Mono"
 
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
@@ -29,7 +29,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.window_background_opacity = 0.95
+-- config.window_background_opacity = 0.95
 -- config.color_scheme = "Cai"
 -- config.color_scheme = "matrix"
 -- config.color_scheme = "Relaxed"
@@ -43,7 +43,9 @@ config.window_background_opacity = 0.95
 -- config.color_scheme = "Github Dark (Gogh)"
 -- config.color_scheme = 'Github Light (Gogh)'
 -- config.color_scheme = "dayfox"
-config.color_scheme = "nightfox"
+-- config.color_scheme = "nightfox"
+-- config.color_scheme = "tokyonight_day"
+config.color_scheme = "tokyonight_night"
 
 -- Key bindings
 config.keys = {
