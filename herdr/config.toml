@@ -1,8 +1,8 @@
 onboarding = false
 [theme]
-name = "rose-pine"
+name = "terminal"
 
-auto_switch = false
+auto_switch = true
 [ui.toast]
 delivery = "herdr"
 # delivery = "system"
@@ -15,5 +15,5 @@ focus_pane_left = ["prefix+left"]
 focus_pane_down = ["prefix+down"]
 focus_pane_up = ["prefix+up"]
 focus_pane_right = ["prefix+right"]
-# previous_tab = ["prefix+left"]
-# next_tab = ["prefix+right"]
+# previous_tab = ["alt+left"]
+# next_tab = ["alt+right"]
