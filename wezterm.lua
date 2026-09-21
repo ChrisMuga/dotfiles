@@ -45,7 +45,8 @@ end
 -- config.color_scheme = "dayfox"
 -- config.color_scheme = "nightfox"
 -- config.color_scheme = "tokyonight_day"
-config.color_scheme = "tokyonight_night"
+-- config.color_scheme = "tokyonight_night"
+config.color_scheme = 'Night Owl (Gogh)'
 
 -- Key bindings
 config.keys = {
