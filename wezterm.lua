@@ -48,8 +48,8 @@ end
 -- config.color_scheme = "tokyonight_night"
 -- config.color_scheme = 'Night Owl (Gogh)'
 config.color_scheme = 'Catppuccin Macchiato'
-config.color_scheme = 'Catppuccin Mocha'
-config.color_scheme = 'Catppuccin Latte'
+-- config.color_scheme = 'Catppuccin Mocha'
+-- config.color_scheme = 'Catppuccin Latte'
 
 -- Key bindings
 config.keys = {
