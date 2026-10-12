@@ -29,7 +29,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
--- config.window_background_opacity = 0.95
+config.window_background_opacity = 0.92
 -- config.color_scheme = "Cai"
 -- config.color_scheme = "matrix"
 -- config.color_scheme = "Relaxed"

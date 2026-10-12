@@ -7,6 +7,10 @@ font-size = 14
 window-height=510
 window-width=1640
 
+background-opacity = 0.85
+
+# Adds a blur effect to the background window (ideal for a frosted glass look)
+background-blur = true
 macos-option-as-alt = left
 
 keybind = alt+left=unbind
