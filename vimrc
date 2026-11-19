@@ -19,3 +19,12 @@ else
 	let &t_EI.="\e[1 q"
 	let &t_te.="\e[0 q"
 endif
+
+
+colorscheme catppuccin_mocha
+hi Normal guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
+
+
+
+
